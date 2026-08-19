@@ -1,0 +1,14 @@
+#Operation modes
+
+uint8 IGNORE=0
+uint8 TAU_REF=1
+uint8 NU_REF=2
+uint8 ETA_REF=3
+
+uint8[6] ref_modes
+string identity # for introspection only
+
+---
+bool success
+string identity_token
+string message
