@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.10)
 project(marble_control_msgs)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -23,9 +23,13 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/WrenchReference.msg
   msg/ControlState.msg
   msg/ControlStatus.msg
+  action/Step.action
+  action/StepArray.action
   srv/RequestControl.srv
   srv/SelectSignal.srv
   srv/RequestExternalReference.srv
+  srv/ReleaseControl.srv
+  srv/ReleaseExternalReference.srv
   DEPENDENCIES
   geometry_msgs
   std_msgs

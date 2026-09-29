@@ -14,4 +14,4 @@ float64[6] nu_error
 bool[6] nu_is_integrating
 float64[6] tau
 float64[6] tau_ref
-std_msgs/Float32MultiArray pwm_out
+std_msgs/Float32MultiArray cmd_out

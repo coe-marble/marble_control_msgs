@@ -1,0 +1,19 @@
+# Goal
+float32[] step_amplitudes
+float32[] step_durations_s
+bool[6] mask
+float32 pre_step_duration_s
+float32 post_step_duration_s
+bool record_to_file
+---
+# Result
+bool success
+string message
+string recording_file
+geometry_msgs/WrenchStamped[] input_samples
+nav_msgs/Odometry[] odometry_samples
+---
+# Feedback
+float32 elapsed_s
+uint32 input_sample_count
+uint32 odometry_sample_count
