@@ -21,6 +21,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/PoseReference.msg
   msg/TwistReference.msg
   msg/WrenchReference.msg
+  msg/WrenchStep.msg
   msg/ControlState.msg
   msg/ControlStatus.msg
   action/Step.action
