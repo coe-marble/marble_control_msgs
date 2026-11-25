@@ -11,6 +11,7 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 
 find_package(rclcpp REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
@@ -24,6 +25,14 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/WrenchStep.msg
   msg/ControlState.msg
   msg/ControlStatus.msg
+  msg/NumericSample.msg
+  msg/NumericGoal.msg
+  msg/ControlInterface.msg
+  msg/NumericField.msg
+  msg/NumericLayout.msg
+  msg/NumericInterface.msg
+  msg/ControlLayout.msg
+  msg/ControlScriptStatus.msg
   action/Step.action
   action/StepArray.action
   srv/RequestControl.srv
@@ -32,6 +41,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   srv/ReleaseControl.srv
   srv/ReleaseExternalReference.srv
   DEPENDENCIES
+  builtin_interfaces
   geometry_msgs
   std_msgs
   nav_msgs
